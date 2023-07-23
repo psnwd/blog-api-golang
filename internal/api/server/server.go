@@ -1,13 +1,13 @@
 package server
 
 import (
-    "github.com/gin-gonic/gin"
-    "github.com/psnwd/blog-api-golang/internal/routes"
-    "github.com/psnwd/blog-api-golang/internal/websocket"
-    "github.com/joho/godotenv"
-    "log"
-    "net/http"
-    "os"
+	"log"
+	"os"
+
+	"github.com/gin-gonic/gin"
+	"github.com/joho/godotenv"
+	"github.com/psnwd/blog-api-golang/internal/routes"
+	"github.com/psnwd/blog-api-golang/internal/websocket"
 )
 
 func Start() error {
