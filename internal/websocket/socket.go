@@ -11,7 +11,7 @@ func Init(router *gin.Engine) {
     router.GET("/ws", handleWebSocket)
 }
 
-func handleWebSocket(c *gin.Context) {
+func HandleWebSocket(c *gin.Context) {
     conn, err := upgrader.Upgrade(c.Writer, c.Request, nil)
     if err != nil {
         // Handle error
